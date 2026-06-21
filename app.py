@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 st.set_page_config(page_title="Credit Risk Scorecard", page_icon="💳")
 
@@ -9,7 +10,9 @@ st.title("💳 Credit Risk Scorecard")
 st.write("Enter customer details to calculate their credit risk score")
 
 # Load the trained model
-model = joblib.load('/Users/anshtomar/PROJECTS/Credit-Risk-Scorecard/model.pkl')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(BASE_DIR, "model.pkl"))
+
 
 st.header("Customer Information")
 
