@@ -26,7 +26,9 @@ Predicts probability of credit default and converts it into a 300-850 point scor
 
 ## 🚀 Live Demo
 
-Coming soon
+👉 [Open Credit Risk Scorecard Dashboard](https://credit-risk-scorecard-jmjrpfyyeaqrj5lrz77jvn.streamlit.app/)
+
+
 
 ## 📁 Project Structure
 
